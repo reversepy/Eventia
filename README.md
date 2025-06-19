@@ -9,10 +9,6 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white" alt="Python" /></a>
   <a href="https://github.com/reversepy"><img src="https://img.shields.io/badge/Made%20by-Reverse-%23ff69b4" alt="Made by Reverse" /></a>
   <a href="https://discord.gg/nitrogang"><img src="https://img.shields.io/discord/1376577777524015105?label=Join%20Discord&logo=discord&color=5865F2" alt="Join Discord" /></a>
-
-    <img src="https://img.shields.io/badge/Storage-JSON-informational?style=flat-square" />
-    <img src="https://img.shields.io/badge/Built%20With-discord.py-blue?style=flat-square" />
-    <img src="https://img.shields.io/github/stars/reverse-dev/eventia?style=social" />
   </p>
 </div>
 
