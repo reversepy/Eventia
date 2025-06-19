@@ -3,10 +3,6 @@
   <img src="assets/banner.png" alt="Eventia Banner" width="600"/>
   <h1>🎉 Eventia</h1>
   <p>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white" alt="Python" /></a>
-  <a href="https://github.com/reversepy"><img src="https://img.shields.io/badge/Made%20by-Reverse-%23ff69b4" alt="Made by Reverse" /></a>
-  <a href="https://discord.gg/nitrogang"><img src="https://img.shields.io/discord/1376577777524015105?label=Join%20Discord&logo=discord&color=5865F2" alt="Join Discord" /></a>
 <i>The ultimate lightweight event manager bot for Discord communities.</i></p>
   <p>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
