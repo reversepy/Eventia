@@ -102,7 +102,8 @@ This makes it ideal for small to medium communities without needing a SQL databa
 | `/upcoming`    | View upcoming events                     |
 | `/postrsvp`    | Post an RSVP button to a channel         |
 | `/rsvplist`    | View who RSVPed to an event              |
-| `/leaderboard` | View top participants                   |
+| `/leaderboard` | View top participants                    |
+| `/lhelp` | The rest of the commands                      |
 
 ---
 
