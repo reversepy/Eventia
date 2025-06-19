@@ -2,56 +2,40 @@
 
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 import os
 import asyncio
 
 intents = discord.Intents.default()
 intents.guilds = True
-intents.members = True
+intents.members = True  # needed if you fetch user info
 intents.messages = True
-intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
-
-load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = "YOUR_BOT_TOKEN"  # Replace with your actual token
 
 @bot.event
 async def on_ready():
-    print(f"✅ Logged in as {bot.user} ({bot.user.id})")
-    await bot.change_presence(
-        activity=discord.Activity(
-            type=discord.ActivityType.watching,
-            name="people forget their own events 💀 | by Reverse"
-        )
-    )
+    print(f"🟢 Logged in as {bot.user} (ID: {bot.user.id})")
+    print("🔁 Syncing slash commands...")
+    await bot.tree.sync()
+    print("✅ Slash commands synced.")
 
-    try:
-        synced = await bot.tree.sync()
-        print(f"🔁 Synced {len(synced)} commands globally.")
-    except Exception as e:
-        print(f"❌ Failed to sync commands: {e}")
+    # Optional funny status
+    await bot.change_presence(activity=discord.Game(name="🗓️ planning events | by Reverse"))
 
-async def load_extensions():
-    extensions = [
-        "cogs.create_event",
-        "cogs.rsvp",
-        "cogs.upcoming",
-        "cogs.leaderboard",
-        "cogs.reminders"
-    ]
-    for ext in extensions:
-        try:
-            await bot.load_extension(ext)
-            print(f"✅ Loaded extension: {ext}")
-        except Exception as e:
-            print(f"❌ Failed to load {ext}: {e}")
+# Auto-load all cogs in the cogs/ folder
+async def load_cogs():
+    for filename in os.listdir("./cogs"):
+        if filename.endswith(".py"):
+            try:
+                await bot.load_extension(f"cogs.{filename[:-3]}")
+                print(f"✅ Loaded cog: {filename}")
+            except Exception as e:
+                print(f"❌ Failed to load {filename}: {e}")
 
 async def main():
     async with bot:
-        await load_extensions()
+        await load_cogs()
         await bot.start(TOKEN)
 
-if __name__ == "__main__":
-    asyncio.run(main())
+asyncio.run(main())
