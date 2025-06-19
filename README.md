@@ -103,7 +103,7 @@ This makes it ideal for small to medium communities without needing a SQL databa
 | `/postrsvp`    | Post an RSVP button to a channel         |
 | `/rsvplist`    | View who RSVPed to an event              |
 | `/leaderboard` | View top participants                    |
-| `/lhelp` | The rest of the commands                      |
+| `/lhelp` | The rest of the commands                       |
 
 ---
 
