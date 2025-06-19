@@ -17,7 +17,6 @@ class LeaderboardCog(commands.Cog):
         rsvps = load_json(RSVP_FILE, default={})
         counter = defaultdict(int)
 
-        # Count RSVP appearances
         for user_ids in rsvps.values():
             for uid in user_ids:
                 counter[uid] += 1
@@ -43,6 +42,17 @@ class LeaderboardCog(commands.Cog):
             embed.add_field(name=f"{i}. {name}", value=f"🎟️ {count} RSVPs", inline=False)
 
         await interaction.response.send_message(embed=embed)
+
+    @app_commands.command(name="myprofile", description="Show your event participation stats.")
+    async def my_profile(self, interaction: discord.Interaction):
+        rsvps = load_json(RSVP_FILE)
+        user_id = str(interaction.user.id)
+        total = sum(user_id in r for r in rsvps.values())
+
+        await interaction.response.send_message(
+            f"📊 **Your Profile:**\n• Events RSVP’d: **{total}**",
+            ephemeral=True
+        )
 
 async def setup(bot):
     await bot.add_cog(LeaderboardCog(bot))
