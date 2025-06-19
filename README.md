@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="assets/banner.png" alt="Eventia Banner" width="600"/>
+  <img src="https://chat.openai.com/share/file/00000000b99c6243b5e57b392a28778b" alt="Eventia Banner" width="600"/>
   <h1>🎉 Eventia</h1>
   <p>
 <i>The ultimate lightweight event manager bot for Discord communities.</i></p>
