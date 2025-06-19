@@ -125,7 +125,7 @@ This makes it ideal for small to medium communities without needing a SQL databa
 
 ---
 
-## 🧑‍💻 Fake Contributors (Looks Real!)
+## 🧑‍💻 Contributors
 
 | Name        | Role             |
 |-------------|------------------|
