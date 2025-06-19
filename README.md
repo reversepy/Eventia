@@ -27,9 +27,9 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Example
 
-> *(Replace these with your real screenshots later)*
+> *This is just an example*
 
 ```
 📅 Movie Night!
@@ -47,7 +47,7 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourname/eventia.git
+git clone https://github.com/reversepy/eventia.git
 cd eventia
 ```
 
