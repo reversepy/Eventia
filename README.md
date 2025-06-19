@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/reversepy/eventia/main/assets/eventia_banner_smaller.png" alt="Eventia Banner" width="400"/>
+  <img src="https://raw.githubusercontent.com/reversepy/eventia/main/assets/eventia_banner.png" alt="Eventia Banner" width="600"/>
   <h1>🎉 Eventia</h1>
   <p>
 <i>The ultimate lightweight event manager bot for Discord communities.</i></p>
